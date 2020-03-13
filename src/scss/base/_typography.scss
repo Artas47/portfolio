@@ -1,0 +1,29 @@
+.highlight {
+  color: #38ada9;
+  font-weight: 600;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  padding: 8rem 0;
+  color: #353b48;
+  &::after {
+    content: "";
+    position: absolute;
+    margin-top: 4rem;
+    height: 0.4rem;
+    text-align: center;
+    width: 5%;
+    display: inline-block;
+    background-color: #353b48;
+  }
+  &--white {
+    color: #f5f6fa;
+    &:after {
+      background-color: #f5f6fa;
+    }
+  }
+}
