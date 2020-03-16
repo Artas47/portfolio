@@ -1,0 +1,45 @@
+.project {
+  width: 40rem;
+  height: 30rem;
+  margin: 2rem;
+  transition: all 1s;
+  &:hover &__desc {
+    opacity: 1;
+  }
+  &__desc {
+    transition: all 1s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s;
+  }
+  &__button-container {
+    transition: all 1s;
+    margin-bottom: 2rem;
+  }
+  &__title {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    transition: all 1s;
+    color: #fff;
+  }
+  &--clothes {
+    background-image: url("/src/images/clothes.png");
+    background-size: cover;
+    transition: all 1s;
+    background-position: center;
+  }
+  &--movies {
+    background-image: url("/src/images/movie-search.png");
+    background-size: cover;
+    background-position: center;
+  }
+  &--news {
+    background-image: url("/src/images/quick-news.png");
+    background-size: cover;
+    background-position: center;
+  }
+}

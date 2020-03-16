@@ -1,0 +1,17 @@
+.contact {
+  position: relative;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+
+  &__text {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #10ac84;
+    font-weight: 500;
+  }
+  &__email {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+  }
+}

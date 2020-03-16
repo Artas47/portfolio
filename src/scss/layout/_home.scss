@@ -5,6 +5,8 @@
   height: 100vh;
   text-align: center;
   overflow: hidden;
+
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   &__title {
     color: #f5f6fa;
     font-size: 4.5rem;
