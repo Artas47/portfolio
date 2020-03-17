@@ -1,11 +1,38 @@
 .btn {
+  position: relative;
   border: none;
-  padding: 1.3rem 5rem;
+  padding: 1.3rem 3.5rem;
   border: 2px solid #fff;
   color: #fff;
   font-size: 2rem;
   background-color: transparent;
 
+  &--main {
+    display: flex;
+    align-items: center;
+    margin: 2rem auto;
+    transition: all 0.2s;
+    & > p {
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    &:hover {
+      background-color: #38ada9;
+
+      .btn--main--icon {
+        transform: rotate(90deg);
+      }
+    }
+
+    &--icon {
+      margin-left: 2rem;
+      height: 2rem;
+      width: 2rem;
+      fill: #fff;
+      z-index: 999;
+      transition: all 0.2s;
+    }
+  }
   &__container {
     display: flex;
     font-size: 2.5rem;

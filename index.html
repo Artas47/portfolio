@@ -16,11 +16,16 @@
     <main>
       <section class="hero">
         <div class="hero__title">
-          Hello, I'am <span class="highlight"> Artur Gorzelany</span>.
+          Hello, I am <span class="highlight"> Artur Gorzelany</span>.
           <br />
-          I'am a front-end devloper.
+          I <span class="cross">am</span> want to be a front-end devloper.
           <br />
-          <button class="btn btn--main">View my work -></button>
+          <button class="btn btn--main">
+            <p>View my work</p>
+            <svg class="btn--main--icon" viewBox="0 0 32 32">
+              <use xlink:href="./src/icons/icons.svg#right-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="about">
@@ -34,7 +39,17 @@
           <div class="hexagon__wrapper">
             <div class="hexagon">
               <svg class="about__icon" viewBox="0 0 32 32">
-                <use xlink:href="./src/icons/icons.svg#famous"></use>
+                <use xlink:href="./src/icons/icons.svg#timer"></use>
+              </svg>
+            </div>
+            <p class="hexagon__text">
+              Always on time
+            </p>
+          </div>
+          <div class="hexagon__wrapper">
+            <div class="hexagon">
+              <svg class="about__icon" viewBox="0 0 32 32">
+                <use xlink:href="./src/icons/icons.svg#manager"></use>
               </svg>
             </div>
             <p class="hexagon__text">
@@ -44,9 +59,7 @@
           <div class="hexagon__wrapper">
             <div class="hexagon">
               <svg class="about__icon" viewBox="0 0 32 32">
-                <use
-                  xlink:href="./src/icons/icons.svg#meeting-with-a-friend"
-                ></use>
+                <use xlink:href="./src/icons/icons.svg#coworking"></use>
               </svg>
             </div>
             <p class="hexagon__text">
