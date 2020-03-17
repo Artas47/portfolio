@@ -5,9 +5,23 @@
   color: #fff;
   font-size: 2rem;
   background-color: transparent;
+
+  &__container {
+    display: flex;
+    font-size: 2.5rem;
+    color: #fff;
+  }
   &--project {
-    padding: 0.7rem 5rem;
+    opacity: 0;
     border: 2px solid #fff;
     color: #fff;
+    text-decoration: none;
+    transition: all 0.2s;
+    width: 17rem;
+    padding: 0.7rem 3rem;
+    margin: 0 1rem;
+    &:hover {
+      background-color: rgba(16, 172, 132, 0.7);
+    }
   }
 }

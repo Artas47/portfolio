@@ -1,45 +1,89 @@
 .project {
   width: 40rem;
   height: 30rem;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-radius: 0.3rem;
   margin: 2rem;
-  transition: all 1s;
-  &:hover &__desc {
-    opacity: 1;
-  }
   &__desc {
-    transition: all 1s;
     opacity: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.3s;
+    transition: all 0.4s;
+    &--title {
+      font-size: 2.3rem;
+      color: #fff;
+    }
+    &--stack {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 1rem;
+      font-size: 1.8rem;
+      color: #10ac84;
+      font-weight: 300;
+    }
   }
-  &__button-container {
-    transition: all 1s;
-    margin-bottom: 2rem;
+  @media only screen and (max-width: 1350px) {
+    width: 35rem;
+    height: 25rem;
   }
-  &__title {
-    margin-top: 2rem;
-    font-size: 2.5rem;
-    transition: all 1s;
-    color: #fff;
+  @media only screen and (max-width: 1150px) {
+    width: 33rem;
+    height: 22rem;
   }
-  &--clothes {
-    background-image: url("/src/images/clothes.png");
+
+  @media only screen and (max-width: 450px) {
+    width: 40rem;
+    height: 23rem;
+  }
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
+  &:hover {
+    .btn--project {
+      opacity: 1;
+    }
+    .project__desc {
+      opacity: 1;
+    }
+  }
+  &--movie {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../src/images/movie-search.png");
     background-size: cover;
-    transition: all 1s;
     background-position: center;
-  }
-  &--movies {
-    background-image: url("/src/images/movie-search.png");
-    background-size: cover;
-    background-position: center;
+    &:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        url("../../src/images/movie-search.png");
+      background-size: cover;
+      background-position: center;
+    }
   }
   &--news {
-    background-image: url("/src/images/quick-news.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../src/images/quick-news.png");
     background-size: cover;
     background-position: center;
+    &:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        url("../../src/images/quick-news.png");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &--clothes {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../src/images/clothes.png");
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+        url("../../src/images/clothes.png");
+      background-size: cover;
+      background-position: center;
+    }
   }
 }
