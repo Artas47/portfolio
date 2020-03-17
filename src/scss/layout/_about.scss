@@ -24,19 +24,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    // padding: 0 5rem;
+    @media only screen and (max-width: 68.75em) {
+      justify-content: space-evenly;
+    }
   }
   &__hexagons {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 auto;
     margin-bottom: 5rem;
+    // @media only screen and (max-width: 31.25em) {
+    //   justify-content: space-between;
+    // }
+    @media only screen and (max-width: 25em) {
+      margin-bottom: 3rem;
+    }
   }
   &__img {
     width: 33rem;
     height: 50rem;
     margin-right: 10rem;
+    @media only screen and (max-width: 68.75em) {
+      margin-right: 0;
+    }
+    // @media only screen and (max-width: 59.376em) {
+    //   margin-right: 3rem;
+    // }
   }
   &__skills {
     width: 55rem;
@@ -44,6 +60,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    @media only screen and (max-width: 46.875em) {
+      width: 90%;
+      padding: 0 3rem;
+    }
+    @media only screen and (max-width: 34.375em) {
+      padding: 0 1rem;
+    }
+    @media only screen and (max-width: 31.25em) {
+      width: 95%;
+    }
   }
   &__icon {
     fill: #fff;
@@ -61,16 +87,25 @@
     height: 2.7rem;
     display: flex;
     align-items: center;
+    // @media only screen and (max-width: 46.875em) {
+    //   width: 90%;
+    // }
+    // @media only screen and (max-width: 31.25em) {
+    //   width: 40rem;
+    // }
     &--skill-name {
       display: flex;
       align-items: center;
       justify-content: center;
-      min-width: 10rem;
+      width: 20%;
       height: 100%;
       color: #fff;
       background-color: #10ac84;
       font-weight: 700;
       font-size: 1.2rem;
+      @media only screen and (max-width: 25em) {
+        font-size: 1rem;
+      }
     }
     &--skill-percentage {
       display: flex;
@@ -82,25 +117,25 @@
       padding-right: 1rem;
       height: 100%;
       &--html {
-        width: 70%;
+        width: 60%;
       }
       &--css {
-        width: 70%;
+        width: 60%;
       }
       &--js {
-        width: 65%;
+        width: 55%;
       }
       &--react {
-        width: 65%;
+        width: 55%;
       }
       &--redux {
-        width: 65%;
+        width: 55%;
       }
       &--git {
-        width: 70%;
+        width: 60%;
       }
       &--jest {
-        width: 55%;
+        width: 45%;
       }
       &--typescript {
         width: 40%;

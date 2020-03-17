@@ -12,6 +12,13 @@
     align-items: center;
     margin: 2rem auto;
     transition: all 0.2s;
+    @media only screen and (max-width: 31.25em) {
+      padding: 1.3rem 2rem;
+      font-size: 1.7rem;
+    }
+    @media only screen and (max-width: 25em) {
+      padding: 1rem 1.5rem;
+    }
     & > p {
       font-weight: 300;
       letter-spacing: 1px;
@@ -35,7 +42,7 @@
   }
   &__container {
     display: flex;
-    font-size: 2.5rem;
+    //font-size: 2.5rem;
     color: #fff;
   }
   &--project {
@@ -47,6 +54,15 @@
     width: 17rem;
     padding: 0.7rem 3rem;
     margin: 0 1rem;
+    @media only screen and (max-width: 87.5em) {
+      width: 15rem;
+    }
+    @media only screen and (max-width: 87.5em) {
+      width: 15rem;
+    }
+    @media only screen and (max-width: 28.125em) {
+      width: 12rem;
+    }
     &:hover {
       background-color: rgba(16, 172, 132, 0.7);
     }
