@@ -1,20 +1,3 @@
-// .box {
-//   width: 17rem;
-//   height: 5rem;
-//   margin: 0 auto;
-//   background-color: #10ac84;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-bottom: 4rem;
-// }
-
-// .im {
-//   font-size: 2.5rem;
-//   color: #fff;
-//   font-weight: 800;
-// }
-
 .about {
   position: relative;
   background-color: #f5f6fa;
@@ -25,7 +8,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    // padding: 0 5rem;
     @media only screen and (max-width: 68.75em) {
       justify-content: space-evenly;
     }
@@ -36,9 +18,6 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 5rem;
-    // @media only screen and (max-width: 31.25em) {
-    //   justify-content: space-between;
-    // }
     @media only screen and (max-width: 25em) {
       margin-bottom: 3rem;
     }
@@ -50,9 +29,6 @@
     @media only screen and (max-width: 68.75em) {
       margin-right: 0;
     }
-    // @media only screen and (max-width: 59.376em) {
-    //   margin-right: 3rem;
-    // }
   }
   &__skills {
     width: 55rem;
@@ -87,12 +63,6 @@
     height: 2.7rem;
     display: flex;
     align-items: center;
-    // @media only screen and (max-width: 46.875em) {
-    //   width: 90%;
-    // }
-    // @media only screen and (max-width: 31.25em) {
-    //   width: 40rem;
-    // }
     &--skill-name {
       display: flex;
       align-items: center;
