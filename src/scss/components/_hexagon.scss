@@ -13,12 +13,17 @@
     flex-direction: column;
     align-items: center;
     margin: 0 5rem;
+    // opacity: 0;
+    // transition: opacity 1.5s ease-out;
     @media only screen and (max-width: 87.5em) {
       margin: 1rem 5rem;
     }
     @media only screen and (max-width: 25em) {
       margin: 1rem 3rem;
     }
+    // &--reveal {
+    //   opacity: 1;
+    // }
   }
   &__text {
     text-align: center;
