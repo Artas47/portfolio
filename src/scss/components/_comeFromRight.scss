@@ -1,0 +1,9 @@
+.come-from-right {
+  transform: translateX(100rem);
+  opacity: 0;
+  transition: transform 0.7s ease-out, opacity 1s ease-out;
+  &--visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

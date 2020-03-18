@@ -1,4 +1,12 @@
-import RevealOnScroll from "./modules/reveal-on-scroll";
+import AnimateOnScroll from "./modules/animate-on-scroll";
 
-new RevealOnScroll(document.querySelectorAll(".hexagon__wrapper"));
-new RevealOnScroll(document.querySelectorAll(".about__skill-bar"));
+const hexagons = document.querySelectorAll(".hexagon__wrapper");
+const skillBarsPercentages = document.querySelectorAll(".about__skills");
+
+new AnimateOnScroll(hexagons, 80, "reveal", "reveal--visible");
+new AnimateOnScroll(
+  skillBarsPercentages,
+  90,
+  "come-from-right",
+  "come-from-right--visible"
+);
