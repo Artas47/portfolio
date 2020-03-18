@@ -13,8 +13,24 @@
   </head>
   <body>
     <div id="stars2"></div>
+    <header class="header">
+      <ul class="header__list">
+        <li class="header__list--item">
+          <a href="#hero" id="hero-link">Home</a>
+        </li>
+        <li class="header__list--item">
+          <a href="#about" id="about-link">About</a>
+        </li>
+        <li class="header__list--item">
+          <a href="#projects" id="projects-link">Projects</a>
+        </li>
+        <li class="header__list--item">
+          <a href="#contact" id="contact-link">Contact</a>
+        </li>
+      </ul>
+    </header>
     <main>
-      <section class="hero">
+      <section id="hero" class="page-section hero" data-link="#hero-link">
         <div class="hero__title">
           Hello, I am <span class="highlight"> Artur Gorzelany</span>.
           <br />
@@ -28,7 +44,7 @@
           </button>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="page-section about" data-link="#about-link">
         <h1 class="heading">
           ABOUT
         </h1>
@@ -167,7 +183,11 @@
           </div>
         </div>
       </section>
-      <section class="projects">
+      <section
+        id="projects"
+        class="projects page-section "
+        data-link="#projects-link"
+      >
         <h1 class="heading">
           PROJECTS
         </h1>
@@ -259,7 +279,11 @@
           </svg>
         </div>
       </section>
-      <section class="contact">
+      <section
+        id="contact"
+        class="page-section contact"
+        data-link="#contact-link"
+      >
         <h1 class="heading heading--white">
           CONTACT
         </h1>

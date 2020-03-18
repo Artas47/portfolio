@@ -42,7 +42,6 @@ export default class AnimateOnScroll {
           window.removeEventListener("scroll", this.scrollThrottle);
         }
       }
-      console.log(scrollPercent);
     }
   }
 

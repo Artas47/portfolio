@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: rgba(27, 39, 53, 0);
+  // border-bottom: 2px solid #38ada9;
+  height: 3.5rem;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease-out;
+  &--dark {
+    background-color: rgba(27, 39, 53, 1);
+    border-bottom: 2px solid #10ac84;
+    height: 5rem;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 300;
+    text-decoration: none;
+    :not(:last-child) {
+      margin-right: 5rem;
+      @media only screen and (max-width: 28.125em) {
+        margin-right: 3rem;
+      }
+      @media only screen and (max-width: 23.75em) {
+        margin-right: 1.5rem;
+      }
+    }
+    &--item {
+      font-size: 2rem;
+      letter-spacing: 1px;
+      & > a {
+        transition: all 0.3s;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.active {
+  color: #38ada9 !important;
+}
