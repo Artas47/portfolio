@@ -8,8 +8,16 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
     @media only screen and (max-width: 68.75em) {
       justify-content: space-evenly;
+    }
+  }
+  &__wrapper {
+    align-self: flex-start;
+    width: 55rem;
+    @media only screen and (max-width: 34.375em) {
+      width: 90%;
     }
   }
   &__hexagons {
@@ -31,20 +39,25 @@
     }
   }
   &__skills {
-    width: 55rem;
     height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    @media only screen and (max-width: 46.875em) {
-      width: 90%;
-      padding: 0 3rem;
+    align-self: flex-start;
+    &-wrapper {
+      align-self: flex-start;
+      width: 55rem;
+      @media only screen and (max-width: 34.375em) {
+        width: 90%;
+      }
     }
-    @media only screen and (max-width: 34.375em) {
-      padding: 0 1rem;
-    }
-    @media only screen and (max-width: 31.25em) {
-      width: 95%;
+    &__description {
+      text-align: center;
+      font-size: 1.7rem;
+      word-wrap: break-word;
+      font-weight: 400;
+      color: #757575;
+      transition: all 0.2s;
     }
   }
   &__icon {
@@ -63,6 +76,8 @@
     height: 2.7rem;
     display: flex;
     align-items: center;
+    outline: 2px solid transparent;
+    transition: all 0.5s;
     &--skill-name {
       display: flex;
       align-items: center;

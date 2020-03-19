@@ -1,14 +1,16 @@
 import AnimateOnScroll from "./modules/animate-on-scroll";
 import StickyHeader from "./modules/sticky-header";
+import onSkillMouseover from "./modules/on-skill-mouseover";
 
 const hexagons = document.querySelectorAll(".hexagon__wrapper");
-const skillBarsPercentages = document.querySelectorAll(".about__skills");
+const skillsWrapper = document.querySelectorAll(".about__skills-wrapper");
 
-let stickyHeader = new StickyHeader();
+new StickyHeader();
 new AnimateOnScroll(hexagons, 80, "reveal", "reveal--visible");
 new AnimateOnScroll(
-  skillBarsPercentages,
+  skillsWrapper,
   90,
   "come-from-right",
   "come-from-right--visible"
 );
+new onSkillMouseover();

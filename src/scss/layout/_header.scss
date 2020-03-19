@@ -10,7 +10,7 @@
   z-index: 10;
   display: flex;
   justify-content: center;
-  transition: height 1s ease-out, border-bottom 1s ease-out,
+  transition: height 1s, border-bottom 1s ease-out,
     background-color 0.5s ease-out;
   &--dark {
     background-color: rgba(27, 39, 53, 1);
