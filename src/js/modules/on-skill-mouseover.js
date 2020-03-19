@@ -19,7 +19,7 @@ export default class onSkillMouseover {
           case "CSS3":
             return (this.divToShow.innerHTML =
               "I'm working usually with SASS preprocessor in my projects. Flexbox and grid are my favorite CSS3 features. I also know how to create simple animations.");
-          case "JAVASCIRPT":
+          case "JAVASCRIPT":
             return (this.divToShow.innerHTML =
               "I'm using Javascript's newest features to keep my code modern and clean. I know almost all the ES6 features and know how to use them.");
           case "REACT":
