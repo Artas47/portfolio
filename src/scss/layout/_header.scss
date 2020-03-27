@@ -12,6 +12,10 @@
   justify-content: center;
   transition: height 1s, border-bottom 1s ease-out,
     background-color 0.5s ease-out;
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
   &--dark {
     background-color: rgba(27, 39, 53, 1);
     border-bottom: 2px solid #10ac84;

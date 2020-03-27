@@ -18,20 +18,22 @@
   <body>
     <div id="stars2"></div>
     <header class="header">
-      <ul class="header__list">
-        <li class="header__list--item">
-          <a href="#hero" id="hero-link">Home</a>
-        </li>
-        <li class="header__list--item">
-          <a href="#about" id="about-link">About</a>
-        </li>
-        <li class="header__list--item">
-          <a href="#projects" id="projects-link">Projects</a>
-        </li>
-        <li class="header__list--item">
-          <a href="#contact" id="contact-link">Contact</a>
-        </li>
-      </ul>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list--item">
+            <a href="#hero" id="hero-link">Home</a>
+          </li>
+          <li class="header__list--item">
+            <a href="#about" id="about-link">About</a>
+          </li>
+          <li class="header__list--item">
+            <a href="#projects" id="projects-link">Projects</a>
+          </li>
+          <li class="header__list--item">
+            <a href="#contact" id="contact-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section id="hero" class="page-section hero" data-link="#hero-link">
@@ -312,20 +314,16 @@
           </a>
         </div>
       </section>
-      <section
-        id="contact"
-        class="page-section contact"
-        data-link="#contact-link"
-      >
-        <h1 class="heading heading--white">
-          CONTACT
-        </h1>
-        <p class="contact__text">
-          Have a question or want to work together?
-        </p>
-        <p class="contact__email">artur.gorzelany98@gmail.com</p>
-      </section>
     </main>
+    <footer id="contact" class="page-section contact" data-link="#contact-link">
+      <h1 class="heading heading--white">
+        CONTACT
+      </h1>
+      <p class="contact__text">
+        Have a question or want to work together?
+      </p>
+      <p class="contact__email">artur.gorzelany98@gmail.com</p>
+    </footer>
     <script src="dist/js/bundle.js"></script>
   </body>
 </html>
