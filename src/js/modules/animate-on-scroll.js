@@ -36,7 +36,7 @@ export default class AnimateOnScroll {
       let scrollPercent =
         (el.getBoundingClientRect().y / this.browserHight) * 100;
       if (scrollPercent < this.scrollPercent) {
-        el.classList.add(this.endClassName); //
+        el.classList.add(this.endClassName);
         el.isRevealed = true;
         if (el.isLastItem) {
           window.removeEventListener("scroll", this.scrollThrottle);
@@ -47,14 +47,9 @@ export default class AnimateOnScroll {
 
   init() {
     this.itemsToReveal.forEach(el => {
-      el.classList.add(this.initClassName); //
+      el.classList.add(this.initClassName);
       el.isRevealed = false;
     });
     this.itemsToReveal[this.itemsToReveal.length - 1].isLastItem = true;
   }
-  // hideInitially() {
-  //   this.itemsToReveal.forEach(el => {
-  //     el.classList.add("hexagon__wrapper--reveal");
-  //   });
-  // }
 }
