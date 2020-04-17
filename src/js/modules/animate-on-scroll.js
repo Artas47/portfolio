@@ -24,7 +24,7 @@ export default class AnimateOnScroll {
   }
 
   calcCaller() {
-    this.itemsToReveal.forEach(el => {
+    this.itemsToReveal.forEach((el) => {
       if (!el.isRevealed) {
         this.calculateIfScrolledTo(el);
       }
@@ -34,7 +34,7 @@ export default class AnimateOnScroll {
   calculateIfScrolledTo(el) {
     if (window.scrollY + this.browserHight > el.offsetTop) {
       let scrollPercent =
-        (el.getBoundingClientRect().y / this.browserHight) * 100;
+        (el.getBoundingClientRect().top / this.browserHight) * 100;
       if (scrollPercent < this.scrollPercent) {
         el.classList.add(this.endClassName);
         el.isRevealed = true;
@@ -46,7 +46,7 @@ export default class AnimateOnScroll {
   }
 
   init() {
-    this.itemsToReveal.forEach(el => {
+    this.itemsToReveal.forEach((el) => {
       el.classList.add(this.initClassName);
       el.isRevealed = false;
     });
