@@ -6,7 +6,7 @@ export default class onSkillMouseover {
   }
 
   events() {
-    this.skills.forEach(el => {
+    this.skills.forEach((el) => {
       let skill = el.childNodes[1].textContent;
 
       el.addEventListener("mouseover", () => {
@@ -24,16 +24,16 @@ export default class onSkillMouseover {
               "I'm using Javascript's newest features to keep my code modern and clean. I know almost all the ES6 features and know how to use them.");
           case "REACT":
             return (this.divToShow.innerHTML =
-              "When I first started to learn React I knew it is the library that I want to work and improve with. In my projects I'm using hooks, context api, styled-components, react-router.");
+              "When I first started to learn React I knew it is the library that I want to work and improve with. In my projects I'm using hooks , context api (and many others react 16+ features), styled-components, react-router.");
           case "REDUX":
             return (this.divToShow.innerHTML =
-              "Redux was pretty hard to understand at the beginning but now I sometimes can't imagine working without redux. I'm using redux-saga, redux-thunk, reselect.");
+              "Redux was pretty hard to understand at the beginning but now I sometimes can't imagine working without redux. I'm using redux-saga, redux-thunk, redux-toolkit, reselect.");
           case "GIT":
             return (this.divToShow.innerHTML =
               "I'm daily working with GIT. Creating branches, updating local/remote repo, stashing, logging is nothing new to me. I know the difference between merge and rebase.");
           case "JEST":
             return (this.divToShow.innerHTML =
-              "I'm still learning jest with react-testing-library. You can check my tests in currency-transactions-app and movie-search project that I have on my github.");
+              "I'm still learning jest with react-testing-library. You can check my tests in currency-transactions-app and movie-search projects that I have on my github.");
           case "TYPESCRIPT":
             return (this.divToShow.innerHTML =
               "I know the very basics. Still learning.");

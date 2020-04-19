@@ -123,11 +123,14 @@
           <img
             class="about__img"
             src="./src/images/me.jpg"
-            width="330"
-            height="500"
-            alt=""
+            width="340"
+            height="520"
+            alt="photo of me"
           />
           <div class="about__skills-wrapper">
+            <p class="about__skills-percentage-info">
+              *Percentages indicate my confidence using associated technologies
+            </p>
             <div class="about__skills">
               <div class="about__skill-bar">
                 <div class="about__skill-bar--skill-name">HTML5</div>
@@ -135,7 +138,7 @@
                   <div
                     class="about__skill-bar--percentage-inner about__skill-bar--percentage-inner--html"
                   >
-                    80%
+                    90%
                   </div>
                 </div>
               </div>
@@ -145,7 +148,7 @@
                   <div
                     class="about__skill-bar--percentage-inner about__skill-bar--percentage-inner--css"
                   >
-                    80%
+                    85%
                   </div>
                 </div>
               </div>
@@ -155,7 +158,7 @@
                   <div
                     class="about__skill-bar--percentage-inner about__skill-bar--percentage-inner--js"
                   >
-                    70%
+                    80%
                   </div>
                 </div>
               </div>
@@ -165,7 +168,7 @@
                   <div
                     class="about__skill-bar--percentage-inner about__skill-bar--percentage-inner--react"
                   >
-                    70%
+                    85%
                   </div>
                 </div>
               </div>
@@ -175,7 +178,7 @@
                   <div
                     class="about__skill-bar--percentage-inner about__skill-bar--percentage-inner--redux"
                   >
-                    70%
+                    75%
                   </div>
                 </div>
               </div>
@@ -185,7 +188,7 @@
                   <div
                     class="about__skill-bar--percentage-inner about__skill-bar--percentage-inner--git"
                   >
-                    80%
+                    85%
                   </div>
                 </div>
               </div>
@@ -279,13 +282,16 @@
             </div>
           </div>
           <div class="project project--youtube">
+            <div class="project__most-proud-of"></div>
+            <p class="project__most-proud-of--text">Most proud of</p>
             <div class="project__desc">
               <p class="project__desc--title">
                 YouTube Clone
               </p>
               <p class="project__desc--stack">
                 react / redux / react-router / react-responsive /
-                styled-components / redux-toolkit / redux-thunk / axios / lodash
+                styled-components / redux-toolkit / redux-thunk / reselect /
+                axios / lodash
               </p>
             </div>
             <div class="btn__container">
@@ -298,6 +304,32 @@
               >
               <a
                 href="https://github.com/Artas47/yt-clone"
+                target="_blank"
+                rel="noopener"
+                class="btn btn--project"
+                >Code</a
+              >
+            </div>
+          </div>
+          <div class="project project--portfolio">
+            <div class="project__desc">
+              <p class="project__desc--title">
+                My Portfolio
+              </p>
+              <p class="project__desc--stack">
+                html / css / sass / BEM / vanilla javascript / lodash / webpack
+              </p>
+            </div>
+            <div class="btn__container">
+              <a
+                href="https://quick-news.herokuapp.com/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn--project"
+                >Live</a
+              >
+              <a
+                href="https://github.com/Artas47/quick-news"
                 target="_blank"
                 rel="noopener"
                 class="btn btn--project"
@@ -332,6 +364,10 @@
               >
             </div>
           </div>
+          <p class="projects__info">
+            *Projects are hosted on Heroku for free which may cause a little
+            delay before the project will load in the browser
+          </p>
         </div>
         <div class="projects__github">
           <a href="https://github.com/Artas47" target="_blank" rel="noopener">

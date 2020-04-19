@@ -2,6 +2,7 @@
   position: relative;
   background-color: #dcdde1;
   text-align: center;
+  z-index: 3;
   &__content {
     display: flex;
     justify-content: center;
@@ -17,5 +18,11 @@
     transition: all 0.2s;
     animation: pulse 1.3s infinite;
     stroke: #000;
+  }
+
+  &__info {
+    font-size: 1.3rem;
+    padding: 0 2rem;
+    flex-basis: 100%;
   }
 }
